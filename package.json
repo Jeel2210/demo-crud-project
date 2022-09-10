@@ -1,0 +1,39 @@
+{
+	"name": "demo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon bin/www.js",
+		"create-db": "npx sequelize-cli db:create",
+		"migration": "npx sequelize-cli db:migrate",
+		"migration-undo": "npx sequelize-cli db:migrate:undo",
+		"migration-undo-all": "npx sequelize-cli db:migrate:undo:all"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.19.0",
+		"cors": "^2.8.5",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"express-jwt": "^6.1.0",
+		"http-status": "^1.5.1",
+		"joi": "^17.4.2",
+		"jsonwebtoken": "^8.5.1",
+		"lodash": "^4.17.21",
+		"lowdb": "^1.0.0",
+		"moment": "^2.29.3",
+		"morgan": "^1.10.0",
+		"mysql": "^2.18.1",
+		"mysql2": "^2.3.0",
+		"sequelize": "^6.6.5"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.15",
+		"sequelize-cli": "^6.3.0"
+	}
+}
